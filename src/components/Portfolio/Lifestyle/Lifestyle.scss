@@ -1,7 +1,17 @@
 .lifestyle-ph {
     display: flex;
     justify-content: center;
-    .img-lifestyle {
-        max-width: 300px;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    .lifestyle-ph-img-container {
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .lifestyle-ph-img {
+            width: 270px;
+            margin-bottom: 3px;
+        }
     }
 }

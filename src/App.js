@@ -1,14 +1,16 @@
 import React from 'react';
 import './App.scss';
 import FirstPage from './components/FirstPage/FirstPage';
+import NavBar from './components/NavBar/NavBar';
 import Portfolio from './components/Portfolio/Portfolio';
 import AboutMe from './components/AboutMe/AboutMe';
+import Contact from './components/Contact/Contact';
 import {
-  BrowserRouter, //lo que va a englobar toda mi pagina
-  Switch, // el switch de los routes
-  Route // equivalente a 'case' de los switch
+  BrowserRouter, 
+  Switch, 
+  Route 
 } from 'react-router-dom';
-import NavBar from './components/NavBar/NavBar'
+
 
 
 
@@ -22,9 +24,9 @@ function App() {
           <div>
             <NavBar/>
             <Route exact path="/portfolio" component={Portfolio} />
-            <Route exact path="/aboutme" component={AboutMe} /> 
+            <Route exact path="/aboutme" component={AboutMe} />
+            <Route exact path="/contact" component={Contact} />
           </div>
-          {/* <Route exact path="/portfolio" component={Portfolio} /> */}
         </Switch>
       </BrowserRouter>
     </React.Fragment>
