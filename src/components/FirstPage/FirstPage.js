@@ -12,7 +12,7 @@ const FirstPage = () => {
                 <p className="main-sub">Photographer based in Buenos Aires</p>
             </article>
             <section className="button-and-media">
-                <button className="main-button"> <Link to="/portfolio" className="link-website"> website </Link> </button>
+                <button className="main-button"> <Link to="/content" className="link-website"> website </Link> </button>
                 <section className="social-media-links">
                    <a href="#"><img className="media twitter" src={instagram} /> </a>
                     <a href="#"><img className="media linkedin" src={linkedin} /> </a>

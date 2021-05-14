@@ -13,6 +13,7 @@ import {
 function Portfolio() {
     return (
         <div className="portfolio">
+            <h1>Portfolio</h1>
             <BrowserRouter>
                 <section className="portfolio-tags">
                     <Link className="portfolio-links" to="/portfolio"> All </Link>

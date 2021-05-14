@@ -32,8 +32,3 @@ let handleClick = () => setClicked(!clicked);
 }
 
 export default NavBar;
-
-// No usado:
-                       {/* <a className={item.cName} href={item.url}>
-                            {item.title}
-                            </a>  */}
