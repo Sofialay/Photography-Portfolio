@@ -1,12 +1,11 @@
 import React from 'react';
 import './Portfolio.scss';
-import { useParams, useHistory, Link } from 'react-router-dom';
+import { useParams, Link } from 'react-router-dom';
 import { PortfolioContent } from './PortfolioContent';
 import portfolioParams from '../../data/portfolioParams';
 
 function Portfolio() {
     const params = useParams();
-    // const history = useHistory()
 
     const switchContent = () => {
         switch (params.section) {

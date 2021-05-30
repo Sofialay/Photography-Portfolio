@@ -1,19 +1,21 @@
-import React, {useState} from 'react'
-import './NavBar.scss'
+import React, { useState } from 'react'
+import { Link } from 'react-router-dom'
 import menuItems from '../../data/menuItems'
-import {Link} from 'react-router-dom'
+import { BiMenuAltLeft } from "react-icons/bi";
+import { AiOutlineClose } from "react-icons/ai";
+import './NavBar.scss'
+
 
 function NavBar() {
+    const [clicked, setClicked] = useState(false)
 
-const [clicked, setClicked] = useState(false)
-
-let handleClick = () => setClicked(!clicked);
+    const handleClick = () => setClicked(!clicked);
 
     return (
         <nav className="portfolio-header">
-            {/* <img className={clicked ? "portfolio-header-x" : "portfolio-header-menu"} onClick={handleClick} src={clicked ? closeButton : menu } alt="menu bar"/> */}
-            <h3 className="portfolio-header-name">Pablo Nacimiento</h3>
-
+            <div className={clicked ? "portfolio-header-x" : "portfolio-header-menu"} onClick={handleClick} >
+               { clicked ? <AiOutlineClose/> : <BiMenuAltLeft/>}
+            </div>
             <ul className={clicked ? 'nav-menu active' : 'nav-menu' }>
                 {
                     menuItems.map((item, index) => {
