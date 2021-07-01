@@ -6,7 +6,7 @@ const FirstPage = () => {
         <div className="bg-image">
             <article className="main-text">
                 <h1 className="main-title">Pablo Nacimiento</h1>
-                <p className="main-sub">Content creator</p>
+                <p className="main-sub">Photographer - Content Creator</p>
             </article>
             <section className="button-and-media">
                 {/* <button className="main-button">

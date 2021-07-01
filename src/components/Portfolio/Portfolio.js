@@ -20,10 +20,10 @@ function Portfolio() {
 
     return (
         <section className="portfolio" id='portfolio'>
-            <h1>Portfolio</h1>
+            <h2>Portfolio</h2>
             <nav> 
                 {portfolioParams.length > 0 && portfolioParams.map((item, index) =>
-                    <Link key={index} to={item.path}>{item.title}</Link>
+                    <Link className='linkTo' key={index} to={item.path}>{item.title}</Link>
                 )}
             </nav>
             {switchContent()}

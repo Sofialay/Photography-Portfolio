@@ -34,7 +34,6 @@
         top: 0;
         transition: all 0.3s ease-in-out;
         opacity: 0;
-        // background-color: cadetblue;
         justify-content: center;
 
         li {
@@ -71,5 +70,6 @@
 }
 
 svg {
-    font-size: 25px;
+    font-size: 35px;
+    margin-top: 10px;
 }
